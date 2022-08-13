@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Crea el mundo con colores y pone los pisos del nivel y el jugador
-        super(2500, 700, 1, false); 
+        super(1700, 700, 1, false); 
         getBackground().setColor(new Color(20, 20, 235));
         getBackground().fill(); 
         addObject(new wide(), 0, 700);
@@ -32,47 +32,31 @@ public class MyWorld extends World
     private void prepare()
     {
         // Genera los pisos que estan suspendidos en el aire
-        tall tall = new tall(100, 100);
-        addObject(tall,922,358);
-        tall tall2 = new tall(100, 300);
-        addObject(tall2,1170,137);
-        tall2.setLocation(1280,306);
-        tall.setLocation(778,413);
-        tall2.setLocation(1004,366);
-        tall tall3 = new tall(300, 100);
-        addObject(tall3,452,211);
-        tall3.setLocation(610,134);
-        tall.setLocation(423,447);
-        tall.setLocation(423,482);
-        tall2.setLocation(686,434);
-        removeObject(tall2);
-        tall3.setLocation(738,342);
-        tall tall7 = new tall(50, 50);
-        addObject(tall7,930,158);
-        tall2.setLocation(935,192);
-        tall tall4 = new tall(50, 50);
-        addObject(tall4,1117,192);
-        tall4.setLocation(1104,193);
-        tall tall5 = new tall(20, 100);
-        addObject(tall5,1274,417);
-        tall5.setLocation(1256,492);
         wide wide = new wide();
         addObject(wide,2078,671);
         wide.setLocation(2046,633);
-        tall tall8 = new tall(20, 20);
-        addObject(tall8,1516,391);
-        tall8.setLocation(1444,405);
-        tall8.setLocation(1576,393);
-        tall7.setLocation(1416,389);
-        tall tall10 = new tall(10, 10);
-        addObject(tall10,1574,368);
-        tall10.setLocation(1570,357);
-        tall7.setLocation(1587,400);
-        tall4.setLocation(1400,366);
-        tall5.setLocation(1170,71);
-        tall5.setLocation(1110,198);
-        tall5.setLocation(1076,225);
-        removeObject(tall7);
-        removeObject(tall4);
+        tall tall = new tall(100, 100);
+        addObject(tall,973,461);
+        tall.setLocation(1108,452);
+        tall.setLocation(1025,463);
+        tall.setLocation(1093,469);
+        tall tall2 = new tall(50, 50);
+        addObject(tall2,880,216);
+        tall2.setLocation(895,272);
+        tall tall3 = new tall(50, 50);
+        addObject(tall3,1129,173);
+        tall3.setLocation(1067,157);
+        tall tall4 = new tall(20, 20);
+        addObject(tall4,1296,197);
+        tall4.setLocation(1279,211);
+        tall tall5 = new tall(10, 20);
+        addObject(tall5,1455,423);
+        tall5.setLocation(1458,431);
+        Enemy enemy = new Enemy();
+        addObject(enemy,1139,389);
+        Enemy enemy2 = new Enemy();
+        addObject(enemy2,1110,585);
+        Enemy enemy3 = new Enemy();
+        addObject(enemy3,1679,525);
     }
 }

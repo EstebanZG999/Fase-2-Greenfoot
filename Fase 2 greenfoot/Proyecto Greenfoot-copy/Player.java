@@ -63,7 +63,7 @@ public class Player extends Actor
     }
     public void jump(){
         // Genera el salto
-        if (Greenfoot.isKeyDown("space")){
+        if (Greenfoot.isKeyDown("up")){
             vspeed = -10;
         }
     }
